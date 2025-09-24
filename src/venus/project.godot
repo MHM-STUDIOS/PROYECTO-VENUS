@@ -42,8 +42,8 @@ config/windows_native_icon="res://mhm-logo.ico"
 
 [display]
 
-window/size/width=1280
-window/size/height=720
+window/size/width=720
+window/size/height=480
 window/size/always_on_top=true
 window/stretch/aspect="keep"
 
@@ -98,6 +98,7 @@ accion={
 2d_physics/layer_1="jugador"
 2d_physics/layer_2="enemigo"
 2d_physics/layer_3="proyectil"
+2d_physics/layer_4="limite"
 
 [physics]
 
