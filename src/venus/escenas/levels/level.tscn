@@ -1,8 +1,18 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://escenas/personajes/redship.tscn" type="PackedScene" id=1]
 
+[sub_resource type="GDScript" id=1]
+resource_name = "level"
+script/source = "extends Node2D
+onready var redship = $redship
+
+func _ready():
+	pass
+"
+
 [node name="Level" type="Node2D"]
+script = SubResource( 1 )
 
 [node name="redship" parent="." instance=ExtResource( 1 )]
 position = Vector2( 340, 417 )
