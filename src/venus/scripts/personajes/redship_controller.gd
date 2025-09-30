@@ -6,7 +6,7 @@ onready var redship= $".."
 
 
 #movimiento
-var mov_x
+var mov_x #realmente hay que explicar?
 var mov_y
 var mov
 
