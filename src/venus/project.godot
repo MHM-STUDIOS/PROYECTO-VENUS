@@ -9,6 +9,21 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Area2D",
+"class": "Bullet1",
+"language": "GDScript",
+"path": "res://scripts/bullets/bullet1.gd"
+}, {
+"base": "Area2D",
+"class": "Bullet2",
+"language": "GDScript",
+"path": "res://scripts/bullets/bullet2.gd"
+}, {
+"base": "Area2D",
+"class": "Bullet3",
+"language": "GDScript",
+"path": "res://scripts/bullets/bullet3.gd"
+}, {
 "base": "EditorVCSInterface",
 "class": "GitAPI",
 "language": "NativeScript",
@@ -19,15 +34,24 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/personajes/Player.gd"
 }, {
-"base": "Player",
-"class": "RedshipController",
+"base": "KinematicBody2D",
+"class": "RedShipController",
 "language": "GDScript",
 "path": "res://scripts/personajes/redship_controller.gd"
+}, {
+"base": "Node2D",
+"class": "ShootStyleMod",
+"language": "GDScript",
+"path": "res://scripts/shoot_style_mod.gd"
 } ]
 _global_script_class_icons={
+"Bullet1": "",
+"Bullet2": "",
+"Bullet3": "",
 "GitAPI": "",
 "Player": "",
-"RedshipController": ""
+"RedShipController": "",
+"ShootStyleMod": ""
 }
 
 [application]
@@ -90,6 +114,11 @@ ataque_1={
 accion={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777221,"unicode":0,"echo":false,"script":null)
+ ]
+}
+cambio_arma={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777237,"unicode":0,"echo":false,"script":null)
  ]
 }
 

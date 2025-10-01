@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/bullets/bullet1.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1, 2 )
+
+[node name="bullet1" type="Area2D"]
+scale = Vector2( 1.49421, 1.45535 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorPicker" type="ColorRect" parent="."]
+margin_left = -1.0
+margin_top = -2.0
+margin_right = 1.0
+margin_bottom = 2.0
+color = Color( 0.796078, 0.0470588, 0.27451, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
